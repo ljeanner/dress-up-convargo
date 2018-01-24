@@ -1,23 +1,98 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>CSS/HTML Workshop with Convargo</title>
-  </head>
-  <body>
-    <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+
+<head>
+  <title>CSS/HTML Workshop with Convargo</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+    <!--BOOTSTRAP -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html"><span class="logo_colour"> Convargo </span> Ship your goods easily</a></h1>
+        </div>
+      </div>
+
     </div>
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
+    <div id="site_content">
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1> What do you want to Dispach? </h1>
+		  
+      <div class="acceuil">
+<form>
+  <div class="form-row">
+	<div id ="trucker">
+		<div class="form-group col-md-6">
+			<label for="inputTruckerName">Trucker Name </label>
+			<input type="name" class="form-control" id="inputTruckerName" placeholder="Name">
+		</div>
+
+		<div class="form-group col-md-6">
+			<label for="inputPriceKm">Trucker Price per Km </label>
+			<input type="number" class="form-control" id="inputPriceKm" placeholder="Price by km">
+		</div>
+
+		<div class="form-group col-md-6">
+			<label for="inputPriceM">Trucker Price by m3 </label>
+			<input type="number" class="form-control" id="inputPriceM" placeholder="Price by m3">
+		</div>
+	</div>
+  </div>
+	<div class="form-row">
+	<div id ="shipper">
+		<div class="form-group col-md-6">
+			<label for="inputShipperName">Shipper Name </label>
+			<input type="name" class="form-control" id="inputShipperName" placeholder="Shipper Name">
+		</div>
+
+		<div class="form-group col-md-6">
+			<label for="inputDistance"> Distance in Km </label>
+			<input type="number" class="form-control" id="inputDistance" placeholder="Distance in km">
+		</div>
+
+		<div class="form-group col-md-6">
+			<label for="inputShipperVolume">Shipper Volume </label>
+			<input type="number" class="form-control" id="inputShipperVolume" placeholder="Volume in m3">
+		</div>
+	</div>
+  </div>
+	
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" id="option">
+  <label class="form-check-label" for="gridCheck">
+	Deductible option
+  </label>
+</div>
+	
+  
+
+  <button type="submit" class="btn btn-primary">Compute</button>
+</form>
+<div id="actors"></div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
-  </body>
+      </div>
+     </div>
+    </div>
+    
+      <div id="footer">
+    </div>
+    </div>
+</body>
 </html>
