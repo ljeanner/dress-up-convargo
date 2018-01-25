@@ -24,6 +24,7 @@
   const button = document.querySelector('#compute');
 
   button.addEventListener('click', function onClick () {
+	  console.log("ici");
     const trucker = CONVARGO.getTrucker();
     const distance = document.querySelector('.distance').value;
     const volume = document.querySelector('.volume').value;
